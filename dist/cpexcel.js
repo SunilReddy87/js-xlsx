@@ -352,7 +352,7 @@ for(j = 0; j != D[253].length; ++j) if(D[253][j].charCodeAt(0) !== 0xFFFD) { e[D
 D[254] = "����������������������������������������������������������������兀嗀﨎﨏﨑﨓﨔礼﨟蘒﨡﨣﨤﨧﨨﨩��������������������������������������������������������������������������������������������������������������������������������������������������������������������������������".split("");
 for(j = 0; j != D[254].length; ++j) if(D[254][j].charCodeAt(0) !== 0xFFFD) { e[D[254][j]] = 65024 + j; d[65024 + j] = D[254][j];}
 return {"enc": e, "dec": d }; })();
-cptable[949] = (function(){ var d = [], e = {}, D = [], j;
+[949] = (function(){ var d = [], e = {}, D = [], j;
 D[0] = "\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\f\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u001b\u001c\u001d\u001e\u001f !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~��������������������������������������������������������������������������������������������������������������������������������".split("");
 for(j = 0; j != D[0].length; ++j) if(D[0][j].charCodeAt(0) !== 0xFFFD) { e[D[0][j]] = 0 + j; d[0 + j] = D[0][j];}
 D[129] = "�����������������������������������������������������������������갂갃갅갆갋갌갍갎갏갘갞갟갡갢갣갥갦갧갨갩갪갫갮갲갳갴������갵갶갷갺갻갽갾갿걁걂걃걄걅걆걇걈걉걊걌걎걏걐걑걒걓걕������걖걗걙걚걛걝걞걟걠걡걢걣걤걥걦걧걨걩걪걫걬걭걮걯걲걳걵걶걹걻걼걽걾걿겂겇겈겍겎겏겑겒겓겕겖겗겘겙겚겛겞겢겣겤겥겦겧겫겭겮겱겲겳겴겵겶겷겺겾겿곀곂곃곅곆곇곉곊곋곍곎곏곐곑곒곓곔곖곘곙곚곛곜곝곞곟곢곣곥곦곩곫곭곮곲곴곷곸곹곺곻곾곿괁괂괃괅괇괈괉괊괋괎괐괒괓�".split("");
@@ -804,7 +804,7 @@ if (typeof module !== 'undefined' && module.exports) module.exports = cptable;
   "use strict";
   if(typeof cptable === "undefined") {
     if(typeof require !== "undefined"){
-      var cpt = require('./cpt' + 'able');
+      var cpt = require('cptable');
       if (typeof module !== 'undefined' && module.exports) module.exports = factory(cpt);
       else root.cptable = factory(cpt);
     } else throw new Error("cptable not found");
